@@ -28,7 +28,14 @@ export class AppComponent implements OnInit{
   currentCheckInVal!:string;
   currentCheckOutVal!:string;
 
-    ngOnInit(){
+  //Fixme: add the load welcome messages here
+  message1$!:Observable<string>
+  message2$!:Observable<String>
+
+  ngOnInit(){
+
+    this.message1$ = this.httpClient.get(this.baseURL + "/api/welcomefrench", {responseType: 'text'})
+    this.message2$ = this.httpClient.get(this.baseURL + "/api/welcomeenglish", {responseType: 'text'})
       this.roomsearch= new FormGroup({
         checkin: new FormControl(' '),
         checkout: new FormControl(' ')
@@ -45,6 +52,7 @@ export class AppComponent implements OnInit{
       this.currentCheckOutVal = x.checkout;
     });
   }
+
 
     onSubmit({value,valid}:{value:Roomsearch,valid:boolean}){
       this.getAll().subscribe(

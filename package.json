@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@angular-devkit/build-webpack": "^0.1703.4",
+    "@angular/cli": "^17.3.4",
+    "g": "^2.0.1"
+  }
+}
