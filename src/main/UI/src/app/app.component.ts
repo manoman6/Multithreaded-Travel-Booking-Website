@@ -30,12 +30,18 @@ export class AppComponent implements OnInit{
 
   //Fixme: add the load welcome messages here
   message1$!:Observable<string>
-  message2$!:Observable<String>
+  message2$!:Observable<string>
+  utcTime$!:Observable<string>
+  westernTime$!:Observable<string>
+  easternTime$!:Observable<string>
 
   ngOnInit(){
 
     this.message1$ = this.httpClient.get(this.baseURL + "/api/welcomefrench", {responseType: 'text'})
     this.message2$ = this.httpClient.get(this.baseURL + "/api/welcomeenglish", {responseType: 'text'})
+    this.utcTime$ = this.httpClient.get(this.baseURL + "/api/UTCTIME", {responseType: 'text'})
+    this.westernTime$ = this.httpClient.get(this.baseURL + "/api/WESTERNTIME", {responseType: 'text'})
+    this.easternTime$ = this.httpClient.get(this.baseURL + "/api/EASTERNTIME", {responseType: 'text'})
       this.roomsearch= new FormGroup({
         checkin: new FormControl(' '),
         checkout: new FormControl(' ')

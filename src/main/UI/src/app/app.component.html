@@ -1,6 +1,4 @@
-
-
-<header id="intro" style="display: block;">
+<header id="intro" style="display: block;" xmlns="http://www.w3.org/1999/html">
   <article class="fullheight" style="height: 568px;">
     <div class="hgroup">
       <h1>Landon Hotel</h1>
@@ -25,6 +23,12 @@
 </header>
 <main id="wrapper">
   <div class="scene" id="welcome">
+    <div class="scene">
+      <h2>Join us for a live Presentation at:</h2>
+      <h2>UTC TIME: {{utcTime$ | async}}</h2><br/>
+      <h2>EASTERN TIME: {{easternTime$ | async}}</h2><br/>
+      <h2>WESTERN TIME: {{westernTime$ | async}}</h2>
+    </div>
     <article class="content">
 
 
