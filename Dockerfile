@@ -1,4 +1,5 @@
 FROM ubuntu:latest
 LABEL authors="emilianopadilla"
+COPY target/D387_sample_code-0.0.2-SNAPSHOT.jar app.jar
 
-ENTRYPOINT ["top", "-b"]
+ENTRYPOINT ["java","-jar","/app.jar"]
