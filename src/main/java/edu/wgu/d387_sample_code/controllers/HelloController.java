@@ -51,6 +51,10 @@ public class HelloController {
                 e.printStackTrace();
             }
         });
+
+        try {
+            Thread.sleep(1500);
+        }catch(Exception e){}
         return frenchWelcome;
     }
 
