@@ -1,4 +1,5 @@
 {
+  "name": "multithreaded-travel-booking-website",
   "dependencies": {
     "@angular-devkit/build-webpack": "^0.1703.4",
     "@angular/cli": "^17.3.4",

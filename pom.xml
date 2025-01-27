@@ -8,12 +8,11 @@
 		<version>2.7.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>edu.wgu</groupId>
-	<artifactId>D387_sample_code</artifactId>
+	<artifactId>multithreaded-travel-booking-website</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>D387 sample code</name>
-	<description>D387 sample code</description>
+	<name>multithreaded-travel-booking-website</name>
+	<description>multithreaded-travel-booking-website</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
