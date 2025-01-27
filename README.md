@@ -11,11 +11,11 @@ Using a travel booking company's spring web app, I integrated multithreaded lang
 ### <ins>How to Pull and Run the Docker Image</ins>
 * In the commandline/terminal pull the image to your machine:
 ```commandline/terminal
-docker pull 
+docker pull ghcr.io/manoman6/multithreaded-travel-booking-website:latest
 ```
 * Run the Container on your local machine:
 ```commandline/terminal
-docker run -p 8080:8080 
+docker run -p 8080:8080 ghcr.io/manoman6/multithreaded-travel-booking-website:latest
 ```
 * Open your Browser type into the URL
 ```URL Bar
@@ -27,19 +27,19 @@ http://localhost:8080
 -- NOTE --: The prebuilt JAR file in `target/` is provided for convenience. It represents the current stable version of the project. To build your own JAR, use `mvn clean package`.
 * Clone this repository using commandline/terminal:
 ```commandline/terminal
-git clone 
+git clone https://github.com/manoman6/Multithreaded-Travel-Booking-Website.git
 ```
 * Then go into the project's directory
 ```commandline/terminal
-cd 
+cd Multithreaded-Travel-Booking-Website
 ```
 * Build the Docker Image
 ```commandline/terminal
-docker build -t 
+docker build -t multithreaded-travel-booking-website .
 ```
 * Run the Docker Image
 ```commandline/terminal
-docker run -p 8080:8080 
+docker run -p 8080:8080 multithreaded-travel-booking-website .
 ```
 * Open your Browser type into the URL
 ```URL Bar
